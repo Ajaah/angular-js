@@ -10,12 +10,22 @@
   </head>
   <body>
 
+    <header ng-include="'header.html'"></header>
+
     <div ng-controller="StarController">
       <ul>
+
+        <div>
+          <button ng-click="order='name'">Order by Name</button>
+          <button ng-click="order='band'">Order by Band</button>
+        </div><br>
+
         <input type="text" ng-model="search" placeholder="Search for a star here"><br><br>
-        <li ng-repeat="star in stars | orderBy:'name' | filter: search">
-          {{star.name}} - {{star.worth | currency}}
+
+        <li ng-repeat="star in stars | orderBy:order | filter: search">
+          {{star.name}} - {{star.worth | currency}} - {{star.band}}
         </li>
+
       </ul>
     </div>
 
