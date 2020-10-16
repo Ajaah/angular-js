@@ -7,16 +7,17 @@ h1,h2,h3{
   margin: 0;
 }
 
-.belt{
+.band{
   padding: 5px 10px;
   border-radius: 10px;
   margin-left: 5px;
   color: #fff;
   font-size: 15px;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 
-#menu-bar{
+#menu-bar{ 
   background:chocolate;
   color: #fff;
   padding: 15px;
@@ -53,6 +54,7 @@ main{
 
 .content{
   padding: 20px;
+  text-align: center;
 }
 
 .content button,
@@ -110,11 +112,12 @@ main{
 .remove{
   float: right;
   padding: 5px;
-  background: #fff;
+  background: rgb(214, 178, 154);
   width: 18px;
   text-align: center;
   border-radius: 20px;
   color: crimson;
+  font-weight: bolder;
   cursor: pointer;
   margin-left: 10px;
 }

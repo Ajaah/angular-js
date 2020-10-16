@@ -3,32 +3,39 @@ var myStarApp=angular.module('myStarApp', []);
 myStarApp.controller('StarController', ['$scope', function($scope){
     $scope.stars=[
         {name:"Alma",
-        band:"pink",
-        worth:10
+        band:"Pink",
+        worth:100000,
+        available:true
         },
         {name:"Shirlyne",
-         band:"purple",
-         worth:20
+         band:"Purple",
+         worth:200000,
+         available:true
          },
          {name:"Watson",
-         band:"green",
-         worth:30
+         band:"Green",
+         worth:300000,
+         available:true
          },
          {name:"Ryan",
-         band:"yellow",
-         worth:40
+         band:"Yellow",
+         worth:400000,
+         available:false
          },
          {name:"Adrian",
-          band:"blue",
-          worth:50 
+          band:"Blue",
+          worth:500000,
+          available:true
          },
          {name:"Seth",
-         band:"red",
-         worth:60
+         band:"Red",
+         worth:600000,
+         available:false
          },
          {name:"Joshua",
          band:"Black",
-         worth:70
+         worth:700000,
+         available:true
          }
     ];
 

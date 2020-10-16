@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myStarApp">
   <head>
-    <title>TheNetNinja Angular Playlist</title>
+    <title>The Stars Net-Worth</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="app\lib\angular.min.js"></script>
     <script src="app\lib\angular-route.min.js"></script>
@@ -11,23 +11,23 @@
   <body>
 
     <header ng-include="'header.html'"></header>
-
+    <div class="content">
     <div ng-controller="StarController">
       <ul>
 
-        <div>
           <button ng-click="order='name'">Order by Name</button>
           <button ng-click="order='band'">Order by Band</button>
-        </div><br>
 
         <input type="text" ng-model="search" placeholder="Search for a star here"><br><br>
 
-        <li ng-repeat="star in stars | orderBy:order | filter: search">
-          {{star.name}} - {{star.worth | currency}} - {{star.band}}
+        <li ng-repeat="star in stars | orderBy:order | filter: search" ng-show="star.available">
+         <h3> {{star.name}} - {{star.worth | currency}}</h3>
+         <div class="remove" ng-click="">X</div>
+         <span class="band" style="background: {{star.band}}">{{star.band}} band</span>
         </li>
 
       </ul>
     </div>
-
+     </div>
   </body>
 </html>
