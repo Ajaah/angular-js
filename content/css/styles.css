@@ -55,6 +55,7 @@ main{
 .content{
   padding: 20px;
   text-align: center;
+  overflow: hidden;
 }
 
 .content button,
@@ -96,12 +97,19 @@ main{
 }
 
 .content input{
-  width: 90%;
+  width: 50%;
   padding: 10px 5%;
   border-radius: 10px;
   border: 2px solid #ddd;
   margin: 10px 0;
 }
+
+.content textarea{
+  width: 50%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;}
 
 .content input[type="submit"]:last-child{
   width: 150px;
@@ -120,4 +128,56 @@ main{
   font-weight: bolder;
   cursor: pointer;
   margin-left: 10px;
+}
+
+
+/* Amimation */
+main.ng-enter{
+  transition: 1s linear all;
+  opacity: 0;
+}
+main.ng-enter.ng-enter-active{
+  opacity: 1;
+}
+
+.stars-list li.ng-enter{
+  transition: 0.2s linear all;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.stars-list li.ng-enter.ng-enter-active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stars-list li.ng-leave{
+  transition: 0.2s linear all;
+  opacity: 1;
+  transform: translateX(0);
+}
+.stars-list li.ng-leave.ng-leave-active{
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.stars-list li.ng-leave-stagger{
+  transition-delay: 0.2s;
+  transition-duration: 0;
+}
+
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
+}
+
+input[disabled="disabled"]{
+  opacity: 0.4;
+  cursor: not-allowed |important;
+}
+
+.cont{
+  color: rgb(185, 37, 37);
+  font-size: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
 }

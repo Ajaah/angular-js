@@ -1,0 +1,12 @@
+<div>
+    <div ng-transclude></div>
+<h3 style="color:brown; padding:10px">{{title}}</h3>
+<img ng-src="{{stars[random].pic}}"/>
+<div>
+   <p style="color:{{stars[random].band}}; font-weight: bolder; text-transform: uppercase;">
+    
+     {{stars[random].name}}'s net-worth is {{stars[random].worth | currency}}
+
+   </p>
+</div>
+</div>

@@ -1,0 +1,12 @@
+[{
+    "name":"Alma","band":"Pink","worth":100000,"available":true,"pic":"contentimagesalma.jpg"},
+    {"name":"Shirlyne","band":"Purple","worth":200000,"available":true,"pic":"contentimagesshirlyne.jpg"},
+    {"name":"Watson","band":"Green","worth":300000,"available":true,"pic":"contentimageswatson.jpg"},
+    {"name":"Ryan","band":"Yellow","worth":400000,"available":true,"pic":"contentimages\rian.jpg"},
+    {"name":"Adrian","band":"Blue","worth":500000,"available":true,"pic":"contentimagesadrian.jpg"},
+    {"name":"Seth","band":"Red","worth":600000,"available":true,"pic":"contentimagesseth.jpg"},
+    {"name":"Joshua","band":"Black","worth":700000,"available":true,"pic":"contentimagesjoshua.jpg"
+}]
+
+​
+

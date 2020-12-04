@@ -11,31 +11,6 @@
   <body>
 
     <header ng-include="'header.html'"></header>
-    <div class="content">
-    <div ng-controller="StarController">
-
-      <ul>
-          <button ng-click="order='name'">Order by Name</button>
-          <button ng-click="order='band'">Order by Band</button>
-
-        <input type="text" ng-model="search" placeholder="Search for a star here"><br><br>
-
-        <li ng-repeat="star in stars | orderBy:order | filter: search" ng-show="star.available">
-          <img ng-src="{{star.pic}}" style="margin: -12px 10px 0 0; float: left; width: 50px;"/>
-         <h3> {{star.name}} - {{star.worth | currency}}</h3>
-         <div class="remove" ng-click="removeStar(star)">X</div>
-         <span class="band" style="background: {{star.band}}">{{star.band}} band</span>
-        </li>
-      </ul>
-
-      <form ng-submit="addStar()">
-        <input type="text" placeholder="Enter the name" ng-model="newstar.name">
-        <input type="text" placeholder="Enter the band" ng-model="newstar.band">
-        <input type="text" placeholder="Enter the Net-worth" ng-model="newstar.worth">
-        <input type="submit" value="Add new star">
-      </form>
-
-    </div>
-     </div>
+    <main ng-view></main>
   </body>
 </html>
