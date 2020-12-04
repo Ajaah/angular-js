@@ -1,6 +1,8 @@
 var myStarApp=angular.module('myStarApp', ['ngRoute', 'ngAnimate']);
 
 myStarApp.config(['$routeProvider', function($routeProvider){
+
+
     $routeProvider
     .when('/home',{
         templateUrl:'views/home.html',
